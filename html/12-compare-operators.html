@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <script>
-        let x = 0;
-        let y = 30;
-        let z = 40;
-        let k = "0";
+      let x = false;
+      let y = true;
+      let z = true;
+      let m = "kedi";
+      let n = "kuş";
+      let t = "false";
 
-        console.log(x == y); //false
-        console.log(x == k); //true;
-        console.log(x === k); //false;
+      const comp1 = y && x && t;
+      console.log(comp1);
 
-        console.log(z > k); //true
-        console.log(x > y > z); //false
-        console.log(z > y > x); //true
+      const comp2 = y && z && m;
+      console.log(comp2);
 
+      const comp3 = y && z && m && n;
+      console.log(comp3);
 
+      const comp4 = y && z && null && m && n;
+      console.log(comp4);
 
-
+      const comp5 = y && z && !null && undefined && m && n;
+      console.log(comp5);
     </script>
-</body>
-
+  </body>
 </html>
