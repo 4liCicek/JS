@@ -31,6 +31,11 @@
 
       const homeEl = document.querySelector(".menu li:first-child");
       console.log(homeEl.innerHTML);
+
+      const listItems = document.querySelectorAll(".menu li");
+      console.log(listItems);
+      console.log(listItems.length);
+      listItems[0].innerHTML = "Contact";
     </script>
   </body>
 </html>
