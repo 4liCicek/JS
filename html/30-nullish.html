@@ -22,10 +22,15 @@
       //   displayName = `${user.firstName} ${user.lastName}`;
       // }
 
-      displayName =
-        user === null || user === undefined
-          ? "Anonymous"
-          : `${user.firstName} ${user.lastName}`;
+      // TERNARY METHOD
+      // displayName =
+      //   user === null || user === undefined
+      //     ? "Anonymous"
+      //     : `${user.firstName} ${user.lastName}`;
+
+      // NULISH
+
+      displayName = user ?? "Anonymous";
 
       console.log(displayName);
     </script>
