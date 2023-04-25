@@ -9,29 +9,29 @@
 
   <body>
     <script>
-      const user = {
+      let user = {
         firstName: "Ali",
         lastName: "Veli",
       };
-      let displayName = "";
 
-      // IF METHOD
-      // if (user == null) {
-      //   displayName = "Anonymus";
-      // } else {
-      //   displayName = `${user.firstName} ${user.lastName}`;
+      // user = null;
+
+      // // IF METHOD
+      // if (user === null || user === undefined) {
+      //   user = { firstName: "Anonymous", lastName: "" };
       // }
 
       // TERNARY METHOD
-      // displayName =
+      // user =
       //   user === null || user === undefined
-      //     ? "Anonymous"
-      //     : `${user.firstName} ${user.lastName}`;
+      //     ? { firstName: "Anonymous", lastName: "" }
+      //     : user;
 
       // NULISH
 
-      displayName = user ?? "Anonymous";
+      user = user ?? { firstName: "Anonymous", lastName: "" };
 
+      const displayName = `${user.firstName} ${user.lastName}`;
       console.log(displayName);
     </script>
   </body>
